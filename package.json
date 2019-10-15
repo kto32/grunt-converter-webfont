@@ -1,7 +1,7 @@
 {
   "name": "grunt-converter-webfont",
   "description": "Конвертор шрифотов из ttf,otf в форматы svg,woff,woff2,eot",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/kto32/grunt-converter-webfont",
   "author": {
     "name": "Лаптева Анастасия"
