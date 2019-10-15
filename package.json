@@ -25,6 +25,9 @@
   "scripts": {
     "test": "grunt test"
   },
+  "dependencies": {
+    "converter-webfont": "git+https://github.com/kto32/converter-webfont.git",
+  },
   "devDependencies": {
     "converter-webfont": "git+https://github.com/kto32/converter-webfont.git",
     "grunt": "~0.4.5",
