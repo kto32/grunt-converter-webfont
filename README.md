@@ -29,7 +29,7 @@ grunt.initConfig({
   converter_webfont: {
     cwebfont: {
         options: {
-            typeFile: [format],
+            typeFile: ['svg,eot,ttf,woff'],
         },
         files: [{
             cwd: 'pathIn',
