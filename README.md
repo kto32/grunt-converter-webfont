@@ -10,7 +10,7 @@ If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out th
 ```shell
 npm install grunt-converter-webfont --save-dev
 
-npm install git://github.com/kto32/test/tree/master/grunt-converter-webfont --save-dev
+npm install git://github.com/kto32/grunt-converter-webfont --save-dev
 ```
 
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
@@ -38,6 +38,10 @@ grunt.initConfig({
     },
   },
 });
+
+grunt.loadNpmTasks('grunt-converter-webfont');
+
+grunt.registerTask('default', ['converter_webfont']);
 
 ```
 
