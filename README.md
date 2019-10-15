@@ -25,23 +25,27 @@ grunt.loadNpmTasks('grunt-converter-webfont');
 In your project's Gruntfile, add a section named `converter_webfont` to the data object passed into `grunt.initConfig()`.
 
 ```js
-grunt.initConfig({
-  converter_webfont: {
-    cwebfont: {
-        options: {
-            typeFile: ['svg,eot,ttf,woff'],
-        },
-        files: [{
-            cwd: 'pathIn',
-            dest: 'pathTo'
-        }]
+module.exports = function(grunt) {
+
+  grunt.initConfig({
+    converter_webfont: {
+      cwebfont: {
+          options: {
+              typeFile: ['svg,eot,ttf,woff'],
+          },
+          files: [{
+              cwd: 'pathIn',
+              dest: 'pathTo'
+          }]
+      },
     },
-  },
-});
+  });
 
-grunt.loadNpmTasks('grunt-converter-webfont');
+  grunt.loadNpmTasks('grunt-converter-webfont');
 
-grunt.registerTask('default', ['converter_webfont']);
+  grunt.registerTask('default', ['converter_webfont']);
+  
+};
 
 ```
 
