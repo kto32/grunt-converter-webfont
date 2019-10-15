@@ -8,7 +8,7 @@
 
 'use strict';
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
   // Project configuration.
   grunt.initConfig({
@@ -32,31 +32,14 @@ module.exports = function(grunt) {
     converter_webfont: {
       cwebfont: {
         options: {
-          typeFile : ['svg,eot,ttf,woff'],
+          typeFile: ['svg,eot,ttf,woff'],
         },
-        files:[{          
+        files: [{
           cwd: 'test/fontOrigin',
           dest: 'test/fontTrans'
         }]
-        // files: {
-        //   'tmp/default_options': ['test/fixtures/testing', 'test/fixtures/123']
-        // }
       },
-      // custom_options: {
-      //   options: {
-      //     separator: ': ',
-      //     punctuation: ' !!!'
-      //   },
-      //   files: {
-      //     'tmp/custom_options': ['test/fixtures/testing', 'test/fixtures/123']
-      //   }
-      // }
     },
-
-    // Unit tests.
-    // nodeunit: {
-    //   tests: ['test/*_test.js']
-    // }
 
   });
 
@@ -73,7 +56,6 @@ module.exports = function(grunt) {
   grunt.registerTask('test', ['clean', 'converter_webfont', 'nodeunit']);
 
   // By default, lint and run all tests.
-  // grunt.registerTask('default', ['jshint', 'test']);
   grunt.registerTask('default', ['converter_webfont']);
 
 };
