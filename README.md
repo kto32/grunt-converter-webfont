@@ -1,6 +1,6 @@
 # grunt-converter-webfont
 
-> Конвертор шрифотов из ttf,otf в форматы svg,woff,woff2,eot
+> Конвертер шрифтов из ttf,otf в форматы svg,woff,woff2,eot
 
 ## Getting Started
 This plugin requires Grunt `~0.4.5`
@@ -58,7 +58,7 @@ Default value: `svg,ttf,eot,woff`
 
 Указать форматы через запятую, возможные форматы: `svg,ttf,eot,woff,woff2`. 
 
-> При использовании woff2 скрипт будет отробатывать чуть дольше из за компрессии.
+> При использовании woff2 скрипт будет отрабатывать чуть дольше из за компрессии.
 
 #### files.cwd
 Type: `String`
