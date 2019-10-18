@@ -24,7 +24,7 @@ grunt.loadNpmTasks('grunt-converter-webfont');
 
 ## Задача "converter_webfont"
 
-### ОбзорВ 
+### Обзор
 Gruntfile вашего проекта добавьте раздел с именем `converter_webfont` к объекту данных, переданному в `grunt.initConfig()`.
 
 ```js
