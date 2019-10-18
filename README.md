@@ -1,6 +1,9 @@
 # grunt-converter-webfont
 
-> Конвертер шрифтов из ttf,otf в форматы svg,woff,woff2,eot
+> Font converter from ttf, otf to svg, woff, woff2, eot formats
+
+## Readme
+[RU](https://github.com/kto32/grunt-converter-webfont/blob/master/README_RU.md)
 
 ## Getting Started
 This plugin requires Grunt `~0.4.5`
@@ -56,23 +59,23 @@ Type: `String`
 
 Default value: `svg,ttf,eot,woff`
 
-Указать форматы через запятую, возможные форматы: `svg,ttf,eot,woff,woff2`. 
+Specify formats separated by commas, possible formats: `svg,ttf,eot,woff,woff2`. 
 
-> При использовании woff2 скрипт будет отрабатывать чуть дольше из за компрессии.
+> When using woff2, the script will work out a little longer due to compression.
 
 #### files.cwd
 Type: `String`
 
 Required: `true`
 
-Путь до папки с шрифтами формата ttf, otf.  Файлы других форматов в папке игнорируются.
+The path to the folder with fonts in the ttf, otf format. Files of other formats in the folder are ignored.
 
 #### files.dest
 Type: `String`
 
 Required: `true`
 
-Путь для сохранения результата.
+The path to save the result.
 
 
 ## Release History
